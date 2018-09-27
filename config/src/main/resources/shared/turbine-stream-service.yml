@@ -1,0 +1,7 @@
+server:
+  port: 8989
+spring:
+  rabbitmq:
+    username: ${RABBITMQ_USER}
+    password: ${RABBITMQ_PASSWORD}
+    virtual-host: ${RABBITMQ_VIRTUAL_HOST}

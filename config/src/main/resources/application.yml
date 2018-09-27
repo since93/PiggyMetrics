@@ -1,11 +1,14 @@
 spring:
+  config:
+    additional-location: file:/Users/wf2311/config/pig/
   cloud:
     config:
       server:
         native:
           search-locations: classpath:/shared
   profiles:
-     active: native
+    active: native
+    include: config
   security:
     user:
       password: ${CONFIG_SERVICE_PASSWORD}

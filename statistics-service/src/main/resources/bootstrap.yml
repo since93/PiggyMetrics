@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    include: config
   application:
     name: statistics-service
   cloud:
